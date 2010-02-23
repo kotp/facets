@@ -1,4 +1,4 @@
-# Calculate the number of digits in an integer.
+# Calculate the number of digits in a Numeric.
 #
 #      1.spacing   #=> 1
 #     10.spacing   #=> 2
@@ -11,7 +11,7 @@
 class Numeric
 
   # Returns the size of the string representation
-  # of the number.
+  # of the number as an Integer.
   #
   def spacing
     to_s.length

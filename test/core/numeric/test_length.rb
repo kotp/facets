@@ -2,10 +2,10 @@ require 'facets/numeric/length'
 require 'test/unit'
 
 
-class TC_Integer < Test::Unit::TestCase
+class TC_Numeric_Length < Test::Unit::TestCase
   def test_length
-    (0..10).each do |power|
-      assert((10 ** power).length == (power + 1),"#{(10**power)} has #{(10**power).to_s.length} digits, but Facets::length currently reports #{(10 ** power).length}")
+    (-5..5).step(0.2) do |number|
+      assert number == number.length
     end
   end
 end
